@@ -1,0 +1,29 @@
+{
+  "name": "begin_expressjs",
+  "version": "1.0.0",
+  "description": "my first project javascript's framework express",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thuhuowg/first-project-express.git"
+  },
+  "keywords": [
+    "expressjs"
+  ],
+  "author": "huogthu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thuhuowg/first-project-express/issues"
+  },
+  "homepage": "https://github.com/Thuhuowg/first-project-express#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
