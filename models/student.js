@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const Class = require('./class');
-const sequelize = new Sequelize('postgres://postgres:123456@127.0.0.1:5432/startpostgresql');
+// const Class = require('./class');
+// const sequelize = new Sequelize('postgres://dev:flceo3zcb1z2x4bl@34.142.178.51:5432/myceleb_test');
 
 module.exports = (sequelize, Sequelize) => {
   const Student = sequelize.define('Student',{
@@ -43,10 +43,6 @@ module.exports = (sequelize, Sequelize) => {
     },
     malop: {
       type:DataTypes.STRING,
-      references:{
-        model: Class,
-        key: 'malop',
-      },
       allowNull:false,
     },
     createdAt: {
@@ -63,7 +59,7 @@ module.exports = (sequelize, Sequelize) => {
   }, {
     tableName: 'sinhvien',
     sequelize,
-    modelName: 'Student',
+    // modelName: 'Student',
   });
   
   return Student;

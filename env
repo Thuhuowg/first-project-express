@@ -1,5 +1,5 @@
-DB_NAME = startpostgresql
-DB_USERNAME = postgres
-DB_PASSWORD = 123456
-DB_HOST = localhost
-DB_DIALECT = postgres
+DB_NAME=myceleb_test
+DB_USERNAME=dev
+DB_PASSWORD=flceo3zcb1z2x4bl
+DB_HOST=34.142.178.51
+DB_DIALECT=postgres

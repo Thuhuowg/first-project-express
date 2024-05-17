@@ -1,6 +1,7 @@
 const { Sequelize}= require('sequelize');
-const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USERNAME, process.env.DB_PASSWORD, {
-    host: process.env.DB_HOST,
+console.log('===process.env.DB_NAME===', 'myceleb_test')
+const sequelize = new Sequelize('myceleb_test', 'dev', 'flceo3zcb1z2x4bl', {
+    host: '34.142.178.51',
     dialect:'postgres',
     logging: false,
     timezone: '+07:00'

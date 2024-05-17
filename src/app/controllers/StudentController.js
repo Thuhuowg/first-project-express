@@ -62,7 +62,7 @@ class StudentController {
     Student.findAll({
         where: condition,
         // attributes:['masv','hosv','tensv']
-        include: { model: Class, foreignKey: 'masv'},
+        include: { model: Class, as: 'classes'},
 
     })
     

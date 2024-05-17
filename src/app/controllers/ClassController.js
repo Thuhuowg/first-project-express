@@ -4,6 +4,7 @@ const moment = require('moment');
 const db = require('../../../models');
 const { NOW } = require('sequelize');
 const Class = db.class;
+const Student = db.student;
 class ClassController {
   create(req,res){
     const lop = {
@@ -25,9 +26,23 @@ class ClassController {
             });
         });
   }
-  index(req,res){
+  index(req, res){
+        console.log('-----',);
+        Class.findAll({
+            include: { model: Student, as: 'students'},
 
-  }
+        })
+        
+        .then(data=>{
+            res.send(data);
+        })
+        .catch(err=>{
+            res.status(500).send({
+                message:
+                err.message || "Some error occurred while..."
+            });
+        });
+    }
 }
 
 

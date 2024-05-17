@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "postgres",
-    "password": 123456,
-    "database": "startpostgresql",
-    "host": "127.0.0.1",
+    "username": "dev",
+    "password": "flceo3zcb1z2x4bl",
+    "database": "myceleb_test",
+    "host": "34.142.178.51",
     "dialect": "postgres",
     "timezone": "+07:00"
   }
