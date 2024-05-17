@@ -1,0 +1,10 @@
+tao 1 model:
+
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+tao1 seed:
+
+npx sequelize-cli seed:generate --name demo-user
+
+
+

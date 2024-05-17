@@ -1,29 +1,100 @@
 {
+  
   "name": "begin_expressjs",
+  
   "version": "1.0.0",
+  
   "description": "my first project javascript's framework express",
-  "main": "index.js",
+  
+  "main": "src/ndex.js",
+  
   "scripts": {
-    "start":"nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  
+    
+  "start": "nodemon --inspect src/index.js",
+  
+    
+  "watch": "node-sass --watch src/resources/scss/ --output src/public/css/app.css",
+  
+    
+  "test": "echo \"Error: no test specified\" && exit 1",
+  
+    
+  "migrate:up": "npx sequelize-cli db:migrate",
+  
+    
+  "migrate:undo": "npx sequelize-cli db:migrate:undo"
+  
   },
+  
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Thuhuowg/first-project-express.git"
+  
+    
+  "type": "git",
+  
+    
+  "url": "git+https://github.com/Thuhuowg/first-project-express.git"
+  
   },
+  
   "keywords": [
-    "expressjs"
+  
+    
+  "expressjs"
+  
   ],
+  
   "author": "huogthu",
+  
   "license": "ISC",
+  
   "bugs": {
-    "url": "https://github.com/Thuhuowg/first-project-express/issues"
+  
+    
+  "url": "https://github.com/Thuhuowg/first-project-express/issues"
+  
   },
+  
   "homepage": "https://github.com/Thuhuowg/first-project-express#readme",
+  
   "dependencies": {
-    "express": "^4.19.2"
+  
+    
+  "bootstrap": "^5.3.3",
+  
+    
+  "express": "^4.19.2",
+  
+    
+  "express-handlebars": "^7.1.2",
+  
+    
+  "joi": "^17.13.1",
+  
+    
+  "jquery": "^3.7.1",
+  
+    
+  "node-sass": "^9.0.0",
+  
+    
+  "pg": "^8.11.5",
+  
+    
+  "pg-hstore": "^2.3.4",
+  
+    
+  "sequelize": "^6.37.3"
+  
   },
+  
   "devDependencies": {
-    "nodemon": "^3.1.0"
+  
+    
+  "nodemon": "^3.1.0",
+  
+    
+  "sequelize-cli": "^6.6.2"
+  
   }
 }
